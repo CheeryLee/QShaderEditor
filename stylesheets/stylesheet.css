@@ -526,7 +526,7 @@ a.button {
   line-height: 1.2;
   color: #fff;
 }
-a.button small {
+a.linuxButton small {
   display: block;
   font-size: 11px;
 }
