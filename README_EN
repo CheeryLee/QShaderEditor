@@ -1,0 +1,66 @@
+==================
+|| INTRODUCTION ||
+==================
+
+QShaderEditor is a simple multiplatform shader editor inspired by Apple's 
+OpenGL Shader Builder. It supports ARB programs, GLSL shaders and CgFx 
+effects.
+
+==================
+|| REQUIREMENTS ||
+==================
+
+You will need at least:
+
+* Qt 5.2
+* GLEW 1.3
+* CMake 3.0
+
+Optionally, if the Cg (1.4 or above) runtime is found, support for CgFx 
+effects will be available.
+
+==============
+|| BUILDING ||
+==============
+
+CMake is used as the build system. You need to create build directory 
+and run cmake:
+---------------------------------------
+| mkdir build && cd build             |
+| cmake -DCMAKE_BUILD_TYPE=Release .. |
+---------------------------------------
+
+The CMAKE_BUILD_TYPE parameter allows the following values:
+* Debug: debug build.
+* Release: release build.
+* RelWithDebInfo: release build with debug information.
+
+For more info about cmake, look at cmake's documentation.
+
+After that run make. You can add -j<number_of_CPU_cores> to speed up the
+build process.
+--------
+| make |
+--------
+
+If you want to install QShaderEditor into the system, just run:
+----------------
+| make install |
+----------------
+
+=================
+|| DEVELOPMENT ||
+=================
+
+The actual repository (rather, this fork) is hosted on GitHub. Latest 
+version of the source code can be obtained at:
+----------------------------------------------------------
+| git clone https://github.com/CheeryLee/QShaderEdit.git |
+----------------------------------------------------------
+
+Original source code (by castano-stuff) is deprecated. It is hosted on 
+Sourceforge and still can be obtained at:
+------------------------------------------------------------------------------------
+| svn co https://svn.sourceforge.net/svnroot/castano-stuff/qshaderedit qshaderedit |
+------------------------------------------------------------------------------------
+
